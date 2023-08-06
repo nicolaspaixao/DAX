@@ -1,0 +1,10 @@
+Uma tabela com as informações de vendas de celulares, temos informações de data da venda, marca, descrição do produto dentre outras:
+
+Medida de ranking: RANKX( ALL(Plan1[Desc_Prod]), CALCULATE( sum(Plan1[Valor_Final]) ),,DESC)
+
+
+CALCULATE( SELECTEDVALUE(Plan1[Desc_Prod]),
+           FILTER( ALL(Plan1[Desc_Prod]),
+                   [Ranking] = 1 //informar neste campo qual a posição do ranking que deseja trazer a categoria
+           )
+)
