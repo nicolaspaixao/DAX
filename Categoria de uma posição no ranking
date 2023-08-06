@@ -1,4 +1,4 @@
-Uma tabela com as informações de vendas de celulares, temos informações de data da venda, marca, descrição do produto dentre outras:
+Uma tabela com as informações de vendas de celulares, temos informações de data da venda, marca, descrição do produto dentre outras informações.
 
 Medida de ranking: RANKX( ALL(Plan1[Desc_Prod]), CALCULATE( sum(Plan1[Valor_Final]) ),,DESC)
 
